@@ -40,6 +40,14 @@ module.exports= {
         } 
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },   
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
         use:['style-loader', 'css-loader', 'sass-loader']

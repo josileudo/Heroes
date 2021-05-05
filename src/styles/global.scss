@@ -1,3 +1,14 @@
+:root {
+  --background: #000;
+  --background2: #2E303C;
+  --background-button: #DC1637;
+  --background-button2: #F2173C;
+  --yellow: #FAE800;
+  --gray: #BEC2C6;
+  --white: #FBFBFB;
+  --text: #ffff
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -5,6 +16,17 @@
 }
 
 body {
-  font: 16px "Helvetica Neue", Arial, sans-serif;
-  color: #121214;
+  font: 16px "Archivo", Arial, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  font-family: "Archivo";
+}
+
+button {
+  cursor: pointer;
 }

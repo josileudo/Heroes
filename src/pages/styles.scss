@@ -1,0 +1,58 @@
+.page-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 1vh auto;
+  padding:2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+  }
+
+  section.wrapper {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 1146px;
+    
+    div.left-container {
+      max-width: 32rem;
+      min-width: 25rem;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 54px;
+        font-family: "Archivo";
+        color: var(--text);
+        margin-bottom: 35px;
+      }
+      p {
+        width: 285px; 
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: regular;
+        color: var(--gray);
+        margin-bottom: 5rem;
+      } 
+    }
+    div.right-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      img {
+        height: 36rem;
+      }
+    }
+  }
+}
