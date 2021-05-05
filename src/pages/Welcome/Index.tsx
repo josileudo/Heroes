@@ -1,12 +1,17 @@
+import "./styles.scss"
 
-import "../pages/styles.scss"
+import spider from "../../assets/spider.png"
+import logo from "../../assets/logotipo.svg" 
 
-import {Button} from "../components/Button"
+import {Button} from "../../components/Button"
+import {Link} from "react-router-dom"
 
-import spider from "../assets/spider.png"
-import logo from "../assets/logotipo.svg" 
+const Welcome: React.FC= () => {
 
-export default function Home (){
+  function handleClickButton (){
+    return <Link to = "/comics"/>
+    
+  }
   return (
     <div className="page-container">
       <header className="header-container">
@@ -27,6 +32,7 @@ export default function Home (){
           <div className = "button">
             <Button
               title = "Vamos lá"
+              onClick = {handleClickButton}
             />
           </div>
         </div>
@@ -38,3 +44,4 @@ export default function Home (){
     </div>
   )
 }
+export default Welcome

@@ -1,10 +1,12 @@
-import Home from './pages/Index'
+import { BrowserRouter } from "react-router-dom"
+import Routes from "./routes"
+
 import'./styles/global.scss'
 
-export function App() {
-  return (
-   <>
-      <Home/>
-   </>
-  ) 
-}
+const App: React.FC =  () => (
+  <BrowserRouter>
+    <Routes/>
+  </BrowserRouter>
+)
+
+export default App
