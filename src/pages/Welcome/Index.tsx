@@ -9,7 +9,7 @@ import {Link} from "react-router-dom"
 const Welcome: React.FC= () => {
 
   function handleClickButton (){
-    return <Link to = "/comics"/>
+    return 
     
   }
   return (
@@ -30,10 +30,13 @@ const Welcome: React.FC= () => {
             conforto e segurança
           </p>
           <div className = "button">
-            <Button
-              title = "Vamos lá"
-              onClick = {handleClickButton}
-            />
+            <Link to = "/comics">
+              <Button
+                title = "Vamos lá"
+                onClick = {handleClickButton}
+              />
+            </Link>
+            
           </div>
         </div>
     

@@ -1,5 +1,11 @@
+import "./styles.scss"
+
+import {Sidebar} from "../../components/Sidebar"
 const Comics: React.FC = () => (
-  <h1>comics</h1>
+  <div>
+    <Sidebar/>
+    
+  </div>
 ) 
 
 export default Comics

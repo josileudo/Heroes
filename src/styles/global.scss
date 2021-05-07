@@ -1,9 +1,8 @@
 :root {
-  --background: #000;
-  --background2: #E5E5E5;
+  --background: #E5E5E5;
+  --background2: #000;
   --background-button: #DC1637;
   --background-button2: #F2173C;
-  --yellow: #FAE800;
   --gray: #BEC2C6;
   --white: #FBFBFB;
   --text: #ffff
@@ -18,8 +17,7 @@
 body {
   font: 16px "Archivo", Arial, sans-serif;
   color: var(--text);
-  background: var(--background);
-  max-width: 1400px;
+  background: var(--background2);
   margin: 0 auto;
 }
 
