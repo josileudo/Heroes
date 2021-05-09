@@ -1,22 +1,25 @@
- 
+import {Link} from "react-router-dom" 
+
 import "../styles/sidebar.scss" 
-import marca from "../assets/marca.svg"
 
-import {ButtonSidebar} from "../components/ButtonSidebar"
+import ButtonSidebar from "../components/ButtonSidebar"
 
-export function Sidebar(){
+const Sidebar: React.FC = () => {
   return (
-    <nav className="sidebar">
-      <img src={marca} alt="logo"/>
-
-      <div className="buttons-container">
-        <ButtonSidebar
-          title = "casinha"
-        />
-        <ButtonSidebar
-          title = "mapa"
-        />
-      </div>
-  </nav>
+    <div>
+     <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/comics">comics</Link>
+        </li>
+        <li>
+          <Link to="/map">map</Link>
+        </li>
+      </ul>
+    </div>
   )
-}
+} 
+
+export default Sidebar

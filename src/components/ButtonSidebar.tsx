@@ -6,10 +6,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
   title: string;
 }
 
-export function ButtonSidebar ({title} : ButtonProps){
+const ButtonSidebar: React.FC<ButtonProps> = ({title}) =>{
   return (
-    <button type= "button">
-      {title}
+    <button type= "button" title = {title}>
     </button>
   )
 }
+
+export default ButtonSidebar;
