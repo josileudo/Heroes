@@ -1,10 +1,8 @@
 import "./styles.scss"
 
-import {Sidebar} from "../../components/Sidebar"
 const Comics: React.FC = () => (
   <div>
-    <Sidebar/>
-    
+    <h1>sou home</h1>
   </div>
 ) 
 
