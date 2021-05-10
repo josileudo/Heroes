@@ -35,29 +35,13 @@ export default function App() {
   return (
     <Router>
       <div style={{ display: "flex" }}>
-        <div className = "app-container"
-         
-        >
-          <Sidebar/>
-
-          <Switch>
-            {routes.map((route, index) => (
-              
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.sidebar />}
-              />
-            ))}
-          </Switch>
+        <div className = "app-container">
+          <Sidebar/> 
         </div>
 
         <div style={{ flex: 1, padding: "10px" }}>
           <Switch>
             {routes.map((route, index) => (
-              // Render more <Route>s with the same paths as
-              // above, but different components this time.
               <Route
                 key={index}
                 path={route.path}

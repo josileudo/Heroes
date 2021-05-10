@@ -12,12 +12,12 @@ const ComicsCard: React.FC = () => {
     
       <div className="comics-info">
         <div className="date-infor">
-          <span className="infor-card">PUBLICADO</span>
-          <span className="infor-data"> July 11, 2018</span>
+          <p className="infor-card">PUBLICADO</p>
+          <p className="infor-data"> July 11, 2018</p>
         </div>
         <div className="price-card">
-          <span className="price-infor">PREÇO</span>
-          <span className="price">$5.89</span>
+          <p className="price-infor">PREÇO</p>
+          <p className="price">$5.89</p>
         </div>
        
       </div>

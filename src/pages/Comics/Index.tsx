@@ -10,6 +10,12 @@ export function Comics(){
       </div>
       <div className="comics">
         <ComicsCard/>
+        <ComicsCard/>
+        <ComicsCard/>
+        <ComicsCard/>
+        <ComicsCard/>
+        <ComicsCard/>
+        <ComicsCard/>
       </div>
     </div>
   )
