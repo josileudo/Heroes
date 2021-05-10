@@ -1,17 +1,23 @@
-import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+  
+import "./styles/App.scss"
 
-import Comics from "./pages/Comics/Index"
-import Welcome from "./pages/Welcome/Index"
-import Map from "./pages/Map"
 import Sidebar from "./components/Sidebar";
+
+import {Comics} from "./pages/Comics"
+import Map from "./pages/Map"
+import Welcome from "./pages/Welcome"
+
+import marca from "./assets/marca.svg"
+import React from "react";
+
 
 const routes = [
   {
     path: "/",
     exact: true,
     sidebar: () => <div>home!</div>,
-    main: () => <Welcome/>
+    main: () => <h2>Home</h2>,
   },
   {
     path: "/comics",
@@ -25,21 +31,18 @@ const routes = [
   }
 ];
 
-export default function SidebarExample() {
+export default function App() {
   return (
     <Router>
       <div style={{ display: "flex" }}>
-        <div
-          style={{
-            padding: "10px",
-            width: "10rem",
-            background: "#f0f0f0"
-          }}
+        <div className = "app-container"
+         
         >
           <Sidebar/>
 
           <Switch>
             {routes.map((route, index) => (
+              
               <Route
                 key={index}
                 path={route.path}
@@ -53,14 +56,15 @@ export default function SidebarExample() {
         <div style={{ flex: 1, padding: "10px" }}>
           <Switch>
             {routes.map((route, index) => (
-              
+              // Render more <Route>s with the same paths as
+              // above, but different components this time.
               <Route
                 key={index}
                 path={route.path}
                 exact={route.exact}
                 children={<route.main />}
               />
-            ))}
+            ))}s
           </Switch>
         </div>
       </div>

@@ -1,9 +1,11 @@
 import "./styles.scss"
 
-const Comics: React.FC = () => (
-  <div>
-    <h1>sou comics</h1>
-  </div>
-) 
-
-export default Comics
+export function Comics(){
+  return (
+    <div className="comics-container">
+      <h1>sou comics</h1>
+    </div>
+  )
+  
+   
+}
