@@ -1,0 +1,42 @@
+.comics {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3rem auto;
+  width: 60rem;
+  gap: 3rem;
+
+  .comics-card {
+    background: var(--backgroud-card);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer;
+
+    .title-text {     
+      margin-top: 0.256rem;
+      display: flex;
+      margin-bottom: 15px;
+      border-bottom: 0.5px solid rgb(163, 163, 163);
+      width: 100%;
+      padding: 0.255rem;
+      margin-top: 0.55rem;
+
+      span {
+        text-indent: 1rem;
+        line-height: 2rem ;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        width: 100%;
+      }
+    }
+    img {
+      height: 18rem;
+    }
+    
+  }
+}
+
+

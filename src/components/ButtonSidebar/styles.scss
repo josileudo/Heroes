@@ -3,22 +3,20 @@ button.button-container {
   align-items: center;
   justify-content: center;
 
-  max-width: 0.8rem;
+  max-width: 71px;
   width: 100%;
 
   border: 0;
-  background: var(--background-button);
-  padding: 1.1875rem 2rem;
-  border-radius: 0.25rem;
+  background: var(--background2);
+  padding: 1rem;
 
-  font-size: 1.125rem;
   color: var(--white);
 
   &:hover {
-    background: var(--background-button2);
+    background: var(--background-button-bar); 
   }
 
-  transition: background 200ms;
+  transition: background 400ms;
 
   & + button {
     margin-top: 1rem;

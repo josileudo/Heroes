@@ -19,7 +19,7 @@ export function ButtonSidebar ({title, iconName, selected, ...rest}: ButtonProps
       className= "button-container"
       type= "button" {...(selected && {className: 'selected'})} {...rest}
       >
-        <Icons name="home" color = "white"/>
+        <Icons name={iconName} color = "white"/>
     </button>
   )
 }

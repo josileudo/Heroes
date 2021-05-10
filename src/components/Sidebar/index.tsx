@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom" 
 import {ButtonSidebar} from "../ButtonSidebar"
 
+import marca from "../../assets/marca.svg"
 import "./styles.scss" 
 
 interface TypesButton {

@@ -1,6 +1,18 @@
-.comics-container {
+div.comics-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+  .search {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-bottom: 2px solid var(--gray);
+  }
+  
 }
 
-h1 {
-  color : white
-}

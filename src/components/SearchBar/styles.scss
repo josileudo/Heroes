@@ -1,0 +1,20 @@
+.search-container {
+  
+  display: flex;
+  width: 90%;
+  height: 5rem;
+  max-width: 25rem; 
+  padding: 0.5rem;
+  justify-content: center;
+
+  .search {
+    text-align: center;
+    height: 64px;
+    width: 60%;
+    font-size: 1rem;
+    border: 0;
+    color: var(--text-input);
+    font-size: 1rem;
+    background-color: var(--background-input);
+  }
+}
