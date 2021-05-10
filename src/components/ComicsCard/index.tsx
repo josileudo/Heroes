@@ -17,7 +17,7 @@ const ComicsCard: React.FC = () => {
         </div>
         <div className="price-card">
           <span className="price-infor">PREÇO</span>
-          <span className="price">$5.99</span>
+          <span className="price">$5.89</span>
         </div>
        
       </div>
