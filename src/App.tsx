@@ -1,15 +1,16 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-  
+import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
+import { useState, useEffect } from 'react'
 import "./styles/App.scss"
 
 import Sidebar from "./components/Sidebar";
 
-import {Comics} from "./pages/Comics"
+import { Comics } from "./pages/Comics"
 import Map from "./pages/Map"
 import Welcome from "./pages/Welcome"
 
 import marca from "./assets/marca.svg"
 import React from "react";
+import Api from "./components/Api";
 
 
 const routes = [
@@ -17,17 +18,17 @@ const routes = [
     path: "/",
     exact: true,
     sidebar: () => <div>home!</div>,
-    main: () => <Welcome/>,
+    main: () => <Welcome />,
   },
   {
     path: "/comics",
     sidebar: () => <div>bubblegum!</div>,
-    main: () => <Comics/>
+    main: () => <Comics />
   },
   {
     path: "/map",
     sidebar: () => <div>shoelaces!</div>,
-    main: () => <Map/>
+    main: () => <Map />
   }
 ];
 
@@ -35,11 +36,11 @@ export default function App() {
   return (
     <Router>
       <div style={{ display: "flex" }}>
-        <div className = "app-container">
-          <Sidebar/> 
+        <div className="app-container">
+          <Sidebar />
         </div>
 
-        <div style={{ flex: 1, padding: "10px" }}>
+        <div style={{ flex: 1,margin: 50}}>
           <Switch>
             {routes.map((route, index) => (
               <Route
@@ -48,7 +49,7 @@ export default function App() {
                 exact={route.exact}
                 children={<route.main />}
               />
-            ))}s
+            ))}
           </Switch>
         </div>
       </div>

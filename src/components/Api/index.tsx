@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 
-import axios from 'axios'
 import md5 from 'md5'
 
 const baseUrl = "http://gateway.marvel.com/v1/public/comics"
@@ -12,9 +11,9 @@ const hash = md5(time + privateKey + publicKey)
 
 interface Comics {
   title: string;
-  image: string;
-  date: string;
-  price: string;
+  thumbnail: string;
+  dates: string;
+  prices: string;
 }
 
 const Api: React.FC = () => {
@@ -29,7 +28,7 @@ const Api: React.FC = () => {
   console.log(comics)
 
   return (
-   
+     <p></p>  
   )
 }
 

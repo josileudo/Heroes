@@ -1,25 +1,35 @@
 import spider from "../../assets/spider-man.png"
+import Api from "../Api"
 import "./styles.scss"
 
-const ComicsCard: React.FC = () => {
+interface ComicsItens {
+  comic: {
+    id: number
+    title: string;
+    image: string;
+    date: string;
+    price: string;
+  }
+}
+
+
+const ComicsCard: React.FC<ComicsItens> = ({...props}) => {
   return (
     <div className="comics-card">
+     
       <div className="title-text">
-        <span>Spider-man</span>
+        <span>{props.comic.title}</span>
       </div>
-      <img src = {spider} alt = "spider"/> 
-      
-    
+      <img src = {props.comic.image} alt = {props.comic.title}/> 
       <div className="comics-info">
         <div className="date-infor">
           <p className="infor-card">PUBLICADO</p>
-          <p className="infor-data"> July 11, 2018</p>
+          <p className="infor-data"> {new Date(props.comic.date).toLocaleDateString()}</p>
         </div>
         <div className="price-card">
           <p className="price-infor">PREÇO</p>
-          <p className="price">$5.89</p>
+          <p className="price">{props.comic.price}</p>
         </div>
-       
       </div>
     </div>
   )

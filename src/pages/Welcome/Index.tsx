@@ -6,14 +6,17 @@ import logo from "../../assets/logotipo.svg"
 import {Button} from "../../components/Button"
 import {Link} from "react-router-dom"
 
-const Welcome: React.FC= () => {
+
+
+const Welcome: React.FC = () => {
+
 
   function handleClickButton (){
     return 
     
   }
   return (
-    <div className="page-container">
+    <div className="page-content">
       <header className="header-container">
         <img src={logo} alt="logo"/>
       </header>
@@ -36,7 +39,6 @@ const Welcome: React.FC= () => {
                 onClick = {handleClickButton}
               />
             </Link>
-            
           </div>
         </div>
     
