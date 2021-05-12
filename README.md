@@ -1,23 +1,23 @@
 # Heroes
 
-<div align="center"> 
-  <img src= "./assets/heroes.gif" width = "900">
+<div align = "center">
+  <img src = "./assets/heroes.gif" width = "900">
 </div>
 
-> Status : under development
+> Status: under development
 
-### O que é?
+### What is?
 
-Heroes é uma plataforma onde os maravilhados por comics da marvel vão poder fazer uma pesquisa de sua comics favorita ver alguns detalhes e ainda poderá 
-enviar para um determinado endereço
+Heroes is a platform where the marvels of marvel comics will be able to do a search of their favorite comics to see some details and still be able to
+send to a certain address
 
-### Objetivo
+### Objective
 
-Principal objetivo do Heroes é atender a um desafio proposto através de uma empresa de telecomunições, chamada de Brisanet
+Heroes' main objective is to meet a challenge proposed through a telecommunications company called Brisanet
 
-### Ferramentas 
+### Tools
 
-Por se tratar de um projeto inacabado, o que foi utilizado estará marcado com um [x], os que serão utilizados futuramente estará vazio.
+Some tools and techniques adopted.
 
 - [x] ReactJS
 - [x] Typescript
@@ -25,20 +25,27 @@ Por se tratar de um projeto inacabado, o que foi utilizado estará marcado com u
 - [x] Babel
 - [x] Webpack
 - [x] SASS
-- [ ] Hooks 
-- [ ] Api da Marvel
-- [ ] Api do Google Maps
+- [x] Hooks
+- [x] Axios
+- [x] Marvel Api
+- [x] Leaflet Api
 
-### Instalação
+### Observation
+[**Leaflet**] (https://react-leaflet.js.org/) was chosen due to problems with the google maps key, so he chose to use an api that he could use responsibly
 
-Primeiramente é importante baixar o código. Depos de ter baixado segue o seguinte comando 
+### Improvements
 
- `yarn` 
+- [] Use Responsibilities
+- [] Store all comics within a database
+- [] Create more filters
 
-* Com esse comando todas dependencias serão instaladas.
 
-`yarn dev`
+### Installation
 
-* Com esse comando seu projeto será rodado em sua máquina
+First of all it is important to download the code. After downloading, run the following command to install the project's dependencies:
+ ``yarn``
 
-<p align = "center"> Josileudo Rodrigues-2021</p>
+Finally, just run the following command to run the project:
+``yarn dev``
+
+<p align = "center"> Josileudo Rodrigues-2021 </p>
