@@ -6,8 +6,6 @@ import logo from "../../assets/logotipo.svg"
 import {Button} from "../../components/Button"
 import {Link} from "react-router-dom"
 
-
-
 const Welcome: React.FC = () => {
 
 
@@ -15,6 +13,7 @@ const Welcome: React.FC = () => {
     return 
     
   }
+  
   return (
     <div className="page-content">
       <header className="header-container">

@@ -4,6 +4,7 @@ div.comics-container {
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  margin: auto 3rem;
 
   .search {
     display:flex;
@@ -15,4 +16,45 @@ div.comics-container {
   }
   
 }
+.modal-container {
+  width: 730px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  .modal-img {
+    flex: 1;
+    .modal-img-content{
+      object-fit: cover;
+    }
+  }
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      flex: 1;
+      font-size: 16px
+    }
+    .comics-info {
+      display: flex;
+      padding-bottom: 20px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .date-infor{
+        .infor-card{
+          color: #AEAEB3;
+        }
+      }
+      .price-card {
+        .price-infor {
+          color: #AEAEB3;
+        }
+      }
+    }
+  }
+}

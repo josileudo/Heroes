@@ -13,10 +13,13 @@ interface TypesButton {
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar-container">
-     
-      <Link to = "/comics"> <ButtonSidebar title = "home" iconName = "home"> </ButtonSidebar></Link>
-      <Link to = "/map"> <ButtonSidebar title = "map" iconName = "map"></ButtonSidebar></Link>
-        
+      <div className="img-container">
+        <img src={marca} alt="marca" />
+      </div>
+      <div className="">
+        <Link to = "/comics"> <ButtonSidebar title = "home" iconName = "home"> </ButtonSidebar></Link>
+        <Link to = "/map"> <ButtonSidebar title = "map" iconName = "map"></ButtonSidebar></Link>        
+      </div>
     </div>
   )
 } 

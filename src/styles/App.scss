@@ -2,10 +2,15 @@
 //HL - HEADER LAYOUT
 //PL - PAGE LAYOUT 
 
+
+
 div.app-container {
   width: 72px;
   height: 100vh;
   background: #f0f0f0;
   position: fixed;
-  
+  z-index: 10;
+}
+.show{
+  display: block !important;
 }
