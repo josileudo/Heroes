@@ -1,8 +1,6 @@
 import {useState} from "react"
 
-
 import spider from "../../assets/spider-man.png"
-import Api from "../Api"
 import "./styles.scss"
 
 interface ComicsItens {

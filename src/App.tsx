@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
-import { useState, useEffect } from 'react'
 import "./styles/App.scss"
 
 import Sidebar from "./components/Sidebar";

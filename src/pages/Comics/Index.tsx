@@ -126,11 +126,11 @@ export function Comics() {
             <div className="comics-info">
               <div className="date-infor">
                 <p className="infor-card">PUBLICADO</p>
-                <p className="infor-data">22/22/22</p>
+                <p className="infor-data">{new Date(comic.date).toLocaleDateString()}</p>
               </div>
               <div className="price-card">
-                <p className="price-infor">PREÇO</p>
-                <p className="price">$5.80</p>
+                <p className="infor-card">PREÇO</p>
+                <p className="price">${comic.price}</p>
               </div>
             </div>
             <Link to="/map">
