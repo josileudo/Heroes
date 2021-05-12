@@ -1,5 +1,9 @@
 # Heroes
 
+<div align="center"> 
+  <img src= "./assets/watch.gif" width = "900">
+</div>
+
 > Status : under development
 
 ### O que é?
