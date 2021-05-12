@@ -14,6 +14,7 @@ button.button-container {
 
   &:hover {
     background: var(--background-button-bar); 
+    border-left: 2px solid var(--background-button)
   }
 
   transition: background 400ms;

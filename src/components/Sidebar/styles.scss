@@ -4,11 +4,26 @@ div.sidebar-container {
   align-items:center;
   justify-content:center;
   max-width: 100%;
-  padding: 1rem;
-
   max-height: 100vh;
   height: 100%; 
   background: var(--background2);
 
   min-height: 100%;
+  position: relative;
+
+  .img-container {
+    background: var(--background-button);
+    height: 80px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+
+    img {
+      align-items: center;
+      display: flex;
+    }
+  }
 }

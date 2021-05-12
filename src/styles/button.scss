@@ -12,9 +12,9 @@ button {
   border-radius: 0.1rem;
 
   font-size: 1.125rem;
-  color: var(--text);
+  color: #FFF;
 
-  text-decoration: underline !important;
+  text-decoration: none !important;
   
   &:hover {
     background: var(--background-button2);

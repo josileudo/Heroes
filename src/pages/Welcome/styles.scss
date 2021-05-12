@@ -1,13 +1,12 @@
 .page-content {
   width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
   background: black;
   height: 100vh;
-
+  padding: 100px;
   header {
-    margin-top: 5vh;
-    margin-bottom: -10vh;
     width: 100%;
   }
 

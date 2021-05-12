@@ -1,7 +1,7 @@
 .comics {
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   margin: 3rem auto;
   width: 65rem;
   gap: 3rem;
@@ -14,6 +14,7 @@
     align-items: center;
     cursor:pointer;
     height: 425px;
+    border-radius: 2px;
 
     .title-text {     
       margin-top: 0.256rem;
@@ -38,7 +39,6 @@
         margin-bottom: 5px;
         width: 100%;
         color: var(--gray-title);
-        
       }
     }
 
