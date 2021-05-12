@@ -5,10 +5,17 @@
   margin-right: 10%;
   border: solid 1px #ddd;
   overflow: hidden;
+
+  .popup-container {
+    height: 40px;
+
+    Popup{
+      height: 50px;
+    }
+
+    img {
+      height: 30px;
+    }
+  }
   
-}
-.leaflet-container {
-  height: 400px;
-  width: 80%;
-  margin: 0 auto;
 }
